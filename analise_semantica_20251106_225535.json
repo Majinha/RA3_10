@@ -1,0 +1,802 @@
+{
+  "metadata": {
+    "arquivo_fonte": "teste3.txt",
+    "data_compilacao": "06/11/2025 22:55:35",
+    "total_linhas": 12,
+    "total_erros": 4
+  },
+  "tabela_simbolos": {
+    "X": {
+      "tipo": "int",
+      "inicializada": true,
+      "linha_declaracao": 10
+    }
+  },
+  "erros_semanticos": [
+    {
+      "linha": 4,
+      "tipo": "ERRO",
+      "mensagem": "Estrutura inválida na linha 4"
+    },
+    {
+      "linha": 11,
+      "tipo": "ERRO_SEMANTICO",
+      "mensagem": "ERRO SEMÂNTICO [Linha 11]: Divisão por zero detectada",
+      "contexto": ""
+    },
+    {
+      "linha": 12,
+      "tipo": "ERRO",
+      "mensagem": "Estrutura inválida na linha 12"
+    },
+    {
+      "linha": 13,
+      "tipo": "ERRO_SEMANTICO",
+      "mensagem": "ERRO SEMÂNTICO [Linha 13]: Operação MOD requer operando1 inteiro, encontrado real",
+      "contexto": ""
+    }
+  ],
+  "arvores_sintaticas": [
+    {
+      "linha": 1,
+      "codigo": "((10 5 >) (50 25 +) WHILE)",
+      "ast": {
+        "tipo_vertice": "ESTRUTURA_WHILE",
+        "tipo_inferido": "int",
+        "valor": null,
+        "linha": 1,
+        "filhos": [
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "booleano",
+            "valor": null,
+            "linha": 1,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 10,
+                "linha": 1,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 5,
+                "linha": 1,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "GT",
+                "linha": 1,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 1,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 50,
+                "linha": 1,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 25,
+                "linha": 1,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "PLUS",
+                "linha": 1,
+                "filhos": []
+              }
+            ]
+          }
+        ]
+      },
+      "tipo": "int"
+    },
+    {
+      "linha": 2,
+      "codigo": "((5 3 >) (10 8 >) (5 2 +) (100 50 -) FOR)",
+      "ast": {
+        "tipo_vertice": "ESTRUTURA_FOR",
+        "tipo_inferido": "int",
+        "valor": null,
+        "linha": 2,
+        "filhos": [
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "booleano",
+            "valor": null,
+            "linha": 2,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 5,
+                "linha": 2,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 3,
+                "linha": 2,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "GT",
+                "linha": 2,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "booleano",
+            "valor": null,
+            "linha": 2,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 10,
+                "linha": 2,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 8,
+                "linha": 2,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "GT",
+                "linha": 2,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 2,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 5,
+                "linha": 2,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 2,
+                "linha": 2,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "PLUS",
+                "linha": 2,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 2,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 100,
+                "linha": 2,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 50,
+                "linha": 2,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "MINUS",
+                "linha": 2,
+                "filhos": []
+              }
+            ]
+          }
+        ]
+      },
+      "tipo": "int"
+    },
+    {
+      "linha": 3,
+      "codigo": "((2 1 >) (100 50 <) (10 5 +) (20 10 *) FOR)",
+      "ast": {
+        "tipo_vertice": "ESTRUTURA_FOR",
+        "tipo_inferido": "int",
+        "valor": null,
+        "linha": 3,
+        "filhos": [
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "booleano",
+            "valor": null,
+            "linha": 3,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 2,
+                "linha": 3,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 1,
+                "linha": 3,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "GT",
+                "linha": 3,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "booleano",
+            "valor": null,
+            "linha": 3,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 100,
+                "linha": 3,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 50,
+                "linha": 3,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "LT",
+                "linha": 3,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 3,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 10,
+                "linha": 3,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 5,
+                "linha": 3,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "PLUS",
+                "linha": 3,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 3,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 20,
+                "linha": 3,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 10,
+                "linha": 3,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "MULT",
+                "linha": 3,
+                "filhos": []
+              }
+            ]
+          }
+        ]
+      },
+      "tipo": "int"
+    },
+    {
+      "linha": 5,
+      "codigo": "((10 5 ==) (100 50 /) (25 5 +) IF)",
+      "ast": {
+        "tipo_vertice": "ESTRUTURA_IF",
+        "tipo_inferido": "int",
+        "valor": null,
+        "linha": 5,
+        "filhos": [
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "booleano",
+            "valor": null,
+            "linha": 5,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 10,
+                "linha": 5,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 5,
+                "linha": 5,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "EQ",
+                "linha": 5,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 5,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 100,
+                "linha": 5,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 50,
+                "linha": 5,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "DIV_INT",
+                "linha": 5,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 5,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 25,
+                "linha": 5,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 5,
+                "linha": 5,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "PLUS",
+                "linha": 5,
+                "filhos": []
+              }
+            ]
+          }
+        ]
+      },
+      "tipo": "int"
+    },
+    {
+      "linha": 6,
+      "codigo": "((20 4 /) (5 2 +) *)",
+      "ast": {
+        "tipo_vertice": "EXPRESSAO",
+        "tipo_inferido": "int",
+        "valor": null,
+        "linha": 6,
+        "filhos": [
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 6,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 20,
+                "linha": 6,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 4,
+                "linha": 6,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "DIV_INT",
+                "linha": 6,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 6,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 5,
+                "linha": 6,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 2,
+                "linha": 6,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "PLUS",
+                "linha": 6,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "OPERADOR",
+            "tipo_inferido": "nao_determinado",
+            "valor": "MULT",
+            "linha": 6,
+            "filhos": []
+          }
+        ]
+      },
+      "tipo": "int"
+    },
+    {
+      "linha": 7,
+      "codigo": "((10 5 +) (3 2 *) -)",
+      "ast": {
+        "tipo_vertice": "EXPRESSAO",
+        "tipo_inferido": "int",
+        "valor": null,
+        "linha": 7,
+        "filhos": [
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 7,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 10,
+                "linha": 7,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 5,
+                "linha": 7,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "PLUS",
+                "linha": 7,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "EXPRESSAO",
+            "tipo_inferido": "int",
+            "valor": null,
+            "linha": 7,
+            "filhos": [
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 3,
+                "linha": 7,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERANDO",
+                "tipo_inferido": "int",
+                "valor": 2,
+                "linha": 7,
+                "filhos": []
+              },
+              {
+                "tipo_vertice": "OPERADOR",
+                "tipo_inferido": "nao_determinado",
+                "valor": "MULT",
+                "linha": 7,
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo_vertice": "OPERADOR",
+            "tipo_inferido": "nao_determinado",
+            "valor": "MINUS",
+            "linha": 7,
+            "filhos": []
+          }
+        ]
+      },
+      "tipo": "int"
+    },
+    {
+      "linha": 8,
+      "codigo": "(100 100 ==)",
+      "ast": {
+        "tipo_vertice": "EXPRESSAO",
+        "tipo_inferido": "booleano",
+        "valor": null,
+        "linha": 8,
+        "filhos": [
+          {
+            "tipo_vertice": "OPERANDO",
+            "tipo_inferido": "int",
+            "valor": 100,
+            "linha": 8,
+            "filhos": []
+          },
+          {
+            "tipo_vertice": "OPERANDO",
+            "tipo_inferido": "int",
+            "valor": 100,
+            "linha": 8,
+            "filhos": []
+          },
+          {
+            "tipo_vertice": "OPERADOR",
+            "tipo_inferido": "nao_determinado",
+            "valor": "EQ",
+            "linha": 8,
+            "filhos": []
+          }
+        ]
+      },
+      "tipo": "booleano"
+    },
+    {
+      "linha": 9,
+      "codigo": "(4 RES)",
+      "ast": {
+        "tipo_vertice": "COMANDO_RES",
+        "tipo_inferido": "int",
+        "valor": null,
+        "linha": 9,
+        "filhos": [
+          {
+            "tipo_vertice": "OPERANDO",
+            "tipo_inferido": "int",
+            "valor": 4,
+            "linha": 9,
+            "filhos": []
+          }
+        ]
+      },
+      "tipo": "int"
+    },
+    {
+      "linha": 10,
+      "codigo": "(60 X MEM)",
+      "ast": {
+        "tipo_vertice": "COMANDO_MEM",
+        "tipo_inferido": "int",
+        "valor": "X",
+        "linha": 10,
+        "filhos": [
+          {
+            "tipo_vertice": "OPERANDO",
+            "tipo_inferido": "int",
+            "valor": 60,
+            "linha": 10,
+            "filhos": []
+          }
+        ]
+      },
+      "tipo": "int"
+    },
+    {
+      "linha": 11,
+      "codigo": "(10 0 /)",
+      "ast": {
+        "tipo_vertice": "EXPRESSAO",
+        "tipo_inferido": "erro",
+        "valor": null,
+        "linha": 11,
+        "filhos": [
+          {
+            "tipo_vertice": "OPERANDO",
+            "tipo_inferido": "int",
+            "valor": 10,
+            "linha": 11,
+            "filhos": []
+          },
+          {
+            "tipo_vertice": "OPERANDO",
+            "tipo_inferido": "int",
+            "valor": 0,
+            "linha": 11,
+            "filhos": []
+          },
+          {
+            "tipo_vertice": "OPERADOR",
+            "tipo_inferido": "nao_determinado",
+            "valor": "DIV_INT",
+            "linha": 11,
+            "filhos": []
+          }
+        ]
+      },
+      "tipo": "erro"
+    },
+    {
+      "linha": 13,
+      "codigo": "(10.5 3 %)",
+      "ast": {
+        "tipo_vertice": "EXPRESSAO",
+        "tipo_inferido": "erro",
+        "valor": null,
+        "linha": 13,
+        "filhos": [
+          {
+            "tipo_vertice": "OPERANDO",
+            "tipo_inferido": "real",
+            "valor": 10.5,
+            "linha": 13,
+            "filhos": []
+          },
+          {
+            "tipo_vertice": "OPERANDO",
+            "tipo_inferido": "int",
+            "valor": 3,
+            "linha": 13,
+            "filhos": []
+          },
+          {
+            "tipo_vertice": "OPERADOR",
+            "tipo_inferido": "nao_determinado",
+            "valor": "MOD",
+            "linha": 13,
+            "filhos": []
+          }
+        ]
+      },
+      "tipo": "erro"
+    },
+    {
+      "linha": 14,
+      "codigo": "(X X +)",
+      "ast": {
+        "tipo_vertice": "EXPRESSAO",
+        "tipo_inferido": "int",
+        "valor": null,
+        "linha": 14,
+        "filhos": [
+          {
+            "tipo_vertice": "ID",
+            "tipo_inferido": "int",
+            "valor": "X",
+            "linha": 14,
+            "filhos": []
+          },
+          {
+            "tipo_vertice": "ID",
+            "tipo_inferido": "int",
+            "valor": "X",
+            "linha": 14,
+            "filhos": []
+          },
+          {
+            "tipo_vertice": "OPERADOR",
+            "tipo_inferido": "nao_determinado",
+            "valor": "PLUS",
+            "linha": 14,
+            "filhos": []
+          }
+        ]
+      },
+      "tipo": "int"
+    }
+  ]
+}
