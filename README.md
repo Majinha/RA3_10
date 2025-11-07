@@ -12,7 +12,7 @@
 
 ## 👥 Integrantes do Grupo (Ordem Alfabética)
 
-- **João Victor Roth** - [joaoroth](https://github.com/joaoroth)
+- **João Victor Roth** - [joaoroth](https://github.com/jvroth01)
 - **Mariana Trentiny Barbosa** - [marianabarbosa](https://github.com/marianabarbosa)
 
 **Nome do Grupo no Canvas:** RA3-10
